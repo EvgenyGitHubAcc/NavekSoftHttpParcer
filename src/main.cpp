@@ -6,8 +6,13 @@ int main(void)
 {
     Headers head;
 
-    std::cout << "Parce header" << std::endl;
-    std::cout << head.parceHttpHeader("http.txt") << std::endl;
+    if(!head.parceHttpHeader("../http.txt"))
+    {
+       std::cout << "Parce error" << std::endl;
+       exit(-1);
+    }
+
+    std::cout << "Parced header" << std::endl;
     std::cout << std::endl;
 
     std::cout << "Request type" << std::endl;

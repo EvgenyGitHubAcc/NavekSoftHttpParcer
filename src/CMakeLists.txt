@@ -1,0 +1,2 @@
+add_executable(NavekSoftHttpParcer main.cpp headers.cpp)
+target_link_libraries(NavekSoftHttpParcer)
