@@ -5,7 +5,6 @@
 #include <fstream>
 #include <iostream>
 #include <regex>
-#include <iterator>
 
 enum type {GET,POST,CONNECT,PUT,HEAD, UNKNOWN};
 
